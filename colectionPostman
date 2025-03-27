@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "operadoras-search-collection",
+		"name": "Busca de Operadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Busca por Termo Geral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/search?query=saude",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["search"],
+					"query": [
+						{
+							"key": "query",
+							"value": "saude"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Busca por Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/search?query=Unimed",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["search"],
+					"query": [
+						{
+							"key": "query",
+							"value": "Unimed"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Busca por Registro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/search?query=41",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["search"],
+					"query": [
+						{
+							"key": "query",
+							"value": "41"
+						}
+					]
+				}
+			}
+		}
+	]
+}
